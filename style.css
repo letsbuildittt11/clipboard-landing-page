@@ -1,0 +1,279 @@
+:root {
+    /*Primary*/
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+
+    /*Neutral*/
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+    
+   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    background: url(images/bg-header-mobile.png) no-repeat;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+/**********Layout**********/
+.container {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+.logo-header {
+    margin-bottom: 4em;
+}
+
+.logo-footer {
+    width: 50px;
+}
+
+.section {
+    padding-top: 1em;
+    padding-bottom: 5em;
+}
+
+    /*Computer & Devices & Logo*/
+.product img {
+    margin-top: 1em;
+}
+.computer-img {
+    margin-bottom: 3em;
+}
+.logo {
+    margin-bottom: 1.5em;
+}
+
+    /*Common style for lists*/
+ul {
+    list-style: none;
+}
+ul li {
+    margin-bottom: .75em;
+}
+
+.tool-list {
+    margin-top: 2em;
+}
+
+.navbar-footer {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.corporation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.corporation img {
+    width: 150px;
+    margin-bottom: 3em;
+}
+
+.footer {
+    padding: 3em 4em;
+    background-color: hsl(201, 24%, 89%);
+}
+
+/**********Typography**********/
+h2, 
+h3,
+h4 {
+    color: var(--dark-grayish-blue);
+    font-weight: 600;
+}
+
+h2 {
+    margin-bottom: .75em;
+    font-size: 2rem;
+}
+
+h3 {
+    margin-bottom: .75em    ;
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+p,
+a {
+    margin-bottom: 2.5em;
+    color: var(--grayish-blue);
+    font-weight: 400;
+}
+
+.navbar-footer li a {
+    color: var(--dark-grayish-blue);
+    text-decoration: none;
+}
+
+.download-btn {
+    margin-bottom: 1.5em;
+    padding: 1em 5em;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 35px;
+    border-style: none;
+}
+
+.download-btn:first-child {
+    background-color: var(--strong-cyan);
+    box-shadow: 0 2px 2px 1px hsl(171, 63%, 35%);
+}
+.download-btn:nth-child(2) {
+    background-color: var(--light-blue);
+    box-shadow: 0 2px 2px 1px hsl(233, 46%, 47%);
+}
+
+
+
+/*Media Query*/
+@media (min-width: 998px) {
+    body {
+        background-image: none;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .header {
+        background: url(images/bg-header-desktop.png) no-repeat;
+        background-size: cover;
+    }
+
+    .product img {
+        width: 50%;
+    }
+
+    /*****Layout*****/
+    .section {
+        padding-top: 1em;
+        padding-bottom: 6em;
+    }
+
+    .download-btn {
+        margin-right: 1em;
+    }
+
+    .product {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .computer-img {
+        transform: translateX(-2.5em);
+    }
+    .devices-img {
+        margin: 0 auto;
+    }
+
+    .product-feature-list {
+        margin-left: 10em;
+    }
+
+    .product-feature-list li p,
+    .product-feature-list li h4{
+        text-align: left;
+    }
+    .product-feature-list li p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .product-feature-list li h4 {
+        margin-bottom: .75em;
+    }
+
+    .tool-list .list-item {
+        width: 20%;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 2em;
+        display: inline-block;
+    }
+    
+    .tool-list .list-item h4 {
+        margin-bottom: .5em;
+    }
+    
+    .tool-list .list-item p{
+        width: 100%;
+    }
+
+    .corporation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .navbar-footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .navbar-footer .list-item {
+        margin-right: 2.5em;
+    }
+
+    .social-media-icons img {
+        margin-right: .5em;
+    }
+
+
+    /*****Typography*****/
+    h2 {
+        margin-bottom: .75em;
+        font-size: 3rem;
+    }
+    
+    h3 {
+        margin-bottom: 1.25em    ;
+        font-size: 2.5rem;
+    }
+    
+    h4 {
+        font-size: 2rem;
+    }
+
+    p {
+        width: 50%;
+        margin: 0 auto 3.5em;
+    }
+    
+} /*End of Media Query*/
+
+
+
+/*Attribution*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
